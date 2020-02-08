@@ -1,9 +1,26 @@
-import React from "react";
+import React from 'react';
+import logo from './logo.svg';
 import './App.css';
 
-export default () => (
-  <>
-    <h1>Welcome to new React Parcel Micro App!</h1>
-    <p className="main-message">Hard to get more minimal than this React app.</p>
-  </>
-);
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
